@@ -6,6 +6,7 @@ body {
     margin: 0;
     background-color: #0B2434;
     padding: 20px;
+    font-family: 'Karla', sans-serif;
 }
 
 main {
@@ -47,6 +48,7 @@ main {
     background: #5035FF;
     box-shadow: 0px 3.2px 7.68px rgba(0, 0, 0, 0.18);
     border-radius: 4px;
+    border: none;
     Width:92px;
     Height:36px;
     
@@ -60,3 +62,9 @@ main {
 
     color: #FFFFFF;
 }
+
+.button:focus {
+    outline: none;
+}
+
+.button:active
