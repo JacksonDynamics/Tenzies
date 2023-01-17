@@ -10,14 +10,15 @@ function App(){
     for(let i = 0; i < 10; i++) {
       newDice.push({
         value:Math.ceil(Math.random() * 6),
-        isHeld: false,
+        isHeld: true,
         id: nanoid()  
       })
     }
     return newDice
   }
 
-  const diceElement = dice.map(die => <Die key={die.id} value={die.value} />)
+  const diceElement = dice.map(die => 
+      <Die key={die.id} value={die.value} isHeld={die.isHeld} />)
 
   function handleClick(){
     setDice(allNewDice())
